@@ -1,0 +1,194 @@
+{
+  "workbench.colorTheme": "Gruvbox Dark Medium",
+  "workbench.iconTheme": "material-icon-theme",
+  "files.autoSave": "afterDelay",
+  "editor.fontSize": 15,
+  "editor.tabSize": 2,
+  "tabnine.experimentalAutoImports": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "editor.minimap.enabled": false,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "JetBrainsMono NF, Monaco, 'Courier New', monospace",
+  "latex-workshop.view.pdf.viewer": "tab",
+  "bracket-pair-colorizer-2.colors": [
+    "Gold",
+    "Orchid",
+    "LightSkyBlue"
+  ],
+  "bracket-pair-colorizer-2.highlightActiveScope": true,
+  "bracket-pair-colorizer-2.activeScopeCSS": [
+    "borderStyle : solid",
+    "borderWidth : 1px",
+    "borderColor : {color}",
+    "opacity: 0.5"
+  ],
+  "bracket-pair-colorizer-2.showBracketsInGutter": true,
+  "bracket-pair-colorizer-2.showBracketsInRuler": true,
+  "bracket-pair-colorizer-2.scopeLineRelativePosition": true,
+  "bracket-pair-colorizer-2.scopeLineCSS": [
+    "borderStyle : solid",
+    "borderWidth : 1px",
+    "borderColor : {color}",
+    "opacity: 0.5"
+  ],
+  "[latex]": {
+    "editor.formatOnPaste": false,
+    "editor.suggestSelection": "recentlyUsedByPrefix"
+  },
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk 🔃",
+      "tools": ["latexmk"]
+    },
+    {
+      "name": "latexmk (latexmkrc)",
+      "tools": ["latexmk_rconly"]
+    },
+    {
+      "name": "latexmk (lualatex)",
+      "tools": ["lualatexmk"]
+    },
+    {
+      "name": "pdflatex ➞ bibtex ➞ pdflatex × 2",
+      "tools": ["pdflatex", "bibtex", "pdflatex", "pdflatex"]
+    },
+    {
+      "name": "Compile Rnw files",
+      "tools": ["rnw2tex", "latexmk"]
+    },
+    {
+      "name": "Compile Jnw files",
+      "tools": ["jnw2tex", "latexmk"]
+    },
+    {
+      "name": "tectonic",
+      "tools": ["tectonic"]
+    }
+  ],
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.env.osx": {},
+  "terminal.integrated.profiles.osx": {
+    "bash": {
+      "path": "bash",
+      "args": ["-l"],
+      "icon": "terminal-bash"
+    },
+    "zsh": {
+      "path": "zsh",
+      "args": ["-l"]
+    },
+    "fish": {
+      "path": "fish",
+      "args": ["-l"]
+    },
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux"
+    },
+    "pwsh": {
+      "path": "pwsh",
+      "icon": "terminal-powershell"
+    }
+  },
+  "maven.terminal.customEnv": [],
+  "latex-workshop.chktex.path": "/Library/TeX/texbin/chktex",
+  "latex-workshop.kpsewhich.path": "/Library/TeX/texbin/kpsewhich",
+  "workbench.sideBar.location": "right",
+  "prettier.printWidth": 70,
+  "prettier.proseWrap": "always",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "java.debug.settings.showStaticVariables": true,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false,
+    "java": true
+  },
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "bracket-pair-colorizer-2.depreciation-notice": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": true,
+  "keyboard.dispatch": "keyCode",
+  //--------------------------------------------------------------------------------
+  // VIM
+  //--------------------------------------------------------------------------------
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<tab>"],
+      "after": ["g", "t"]
+    },
+    {
+      "before": ["<S-tab>"],
+      "after": ["g", "T"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "s", "v"],
+      "commands": [":vsplit"]
+    },
+    {
+      "before": ["<leader>", "h"],
+      "after": ["_"]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "after": ["$"]
+    },
+    {
+      "before": ["Z", "Z"],
+      "commands": [":q!"]
+    },
+    //jump to explorer like nerdtree
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.view.explorer"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [">"],
+      "after": [">", "g", "v"]
+    },
+    {
+      "before": ["<"],
+      "after": ["<", "g", "v"]
+    },
+    //paste without overriding current register
+    {
+      "before": ["p"],
+      "after": ["p", "g", "v", "y"]
+    }
+  ],
+  "vim.sneak": true,
+  "vim.easymotion": true,
+  "vim.leader": "<space>",
+  "editor.lineNumbers": "relative",
+  "workbench.list.keyboardNavigation": "simple",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false
+}
